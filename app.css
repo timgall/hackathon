@@ -1,0 +1,116 @@
+button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  header{
+    font-size:50px;
+    color:black;
+  }
+  button {
+    z-index: 1;
+    background-color: #034f33;
+    border: 5px solid rgb(4, 4, 4);
+    padding: 10px 24px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: rgb(251, 247, 247);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .userTweets{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .input{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .selectedTweet {
+    z-index: 1;
+    flex: 1;
+  }
+  
+  .tweets {
+    z-index: 1;
+    flex: 1;
+  }
+  
+  div {
+    color: black;
+    font-size: 20px;
+  }
+  
+  @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200");
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg");
+    background-size: cover;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+  
+  @-webkit-keyframes slidein {
+    from {
+      background-position: top;
+      background-size: 3000px;
+    }
+    to {
+      background-position: -100px 0px;
+      background-size: 2750px;
+    }
+  }
+  
+  @keyframes slidein {
+    from {
+      background-position: top;
+      background-size: 3000px;
+    }
+    to {
+      background-position: -100px 0px;
+      background-size: 2750px;
+    }
+  }
+  
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(75, 75, 250, 0.3);
+    border-radius: 3px;
+  }
+  
+  .center h1 {
+    text-align: center;
+    color: white;
+  }

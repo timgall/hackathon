@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script defer src="app.js"></script>
+    <script src="jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="app.css" />
+    <title>Chart Creator</title>
+  </head>
+  <body>
+    <header>
+        Welcome to the Automated Chart Builder
+    </header>
+    <div class="buttons">
+        <button class="clearChart">Clear Data</button>
+        <button class="restoreData">Restore Data</button>
+        <button class="saveData">Save Chart Data</button>
+        <button class="Enter">Input new Column Data</button>
+    </div>
+    <div>
+    <canvas id="myChart"></canvas>
+    </div>
+        <div>
+            <label for="columnName">Column Name:</label>
+            <input type="text" id="columnName">
+            <label for="columnValue">Column Value:</label>
+            <input type="number" id="columnValue">
+            <label for="columnLabel">Chart Name:</label>
+            <input type="text" id="columnLabel">
+            <div>
+            <div class="buttons">
+            <button id="addData">Add Data</button>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
